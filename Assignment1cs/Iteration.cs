@@ -1,8 +1,10 @@
-﻿namespace Assignment1cs;
+﻿using Assignment1cs.Abstract;
+
+namespace Assignment1cs;
 
 public class Iteration : Algorithm
 {
-    private const double DefaultX = 1;
+    private const double DefaultX = 2;
 
     public static (double, double, Func<double, double>)[] TestCases => new (double, double, Func<double, double>)[]
     {

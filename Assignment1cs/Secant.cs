@@ -1,4 +1,6 @@
-﻿namespace Assignment1cs;
+﻿using Assignment1cs.Abstract;
+
+namespace Assignment1cs;
 
 public class Secant : Algorithm
 {

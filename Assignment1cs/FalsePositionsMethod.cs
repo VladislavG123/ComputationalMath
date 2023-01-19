@@ -1,4 +1,6 @@
-﻿namespace Assignment1cs;
+﻿using Assignment1cs.Abstract;
+
+namespace Assignment1cs;
 
 public class FalsePositionsMethod : Algorithm
 {
@@ -13,7 +15,7 @@ public class FalsePositionsMethod : Algorithm
     protected override double DoSection(double a, double b, Func<double, double> func, int iteration = 0)
     {
         var c = (a * func(b) - b * func(a)) / (func(b) - func(a));
-        if (func(c) is >= -0.001 and <= 0.001 || ++iteration >= 1000) return c;
+        if (func(c) is >= -Tolerance and <= Tolerance || ++iteration >= 1000) return c;
 
         return func(c) * func(a) < 0 ? DoSection(a, c, func, iteration) : DoSection(c, b, func, iteration);
     }

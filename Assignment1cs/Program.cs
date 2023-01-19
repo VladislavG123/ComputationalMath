@@ -5,7 +5,7 @@ var falsePosition = new FalsePositionsMethod();
 var secant = new Secant();
 var iteration = new Iteration();
 
-TestCaseRunner.Run(iteration);
+TestCaseRunner.Run(bisection);
 
 //TaskC();
 void TaskC()
