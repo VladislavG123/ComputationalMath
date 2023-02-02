@@ -24,3 +24,4 @@ public class TaskBase
         public double[,] DifferenceTable { get; init; }
     }    
 }
+
