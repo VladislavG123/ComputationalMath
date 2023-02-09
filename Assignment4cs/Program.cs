@@ -2,7 +2,7 @@
 using Assignment4cs.Tasks;
 
 
-var testCase = Task7.TestCase();
+var testCase = Task1.TestCase();
 
 Console.WriteLine("\nValue at " + testCase.ValueToInterpolateAt + " is " +
                   Math.Round(
